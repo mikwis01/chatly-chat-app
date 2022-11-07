@@ -1,0 +1,96 @@
+@import '../../styles/variables.scss';
+
+@keyframes onLoad {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.container {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background: $background-gradient;
+}
+
+.form_container {
+	display: flex;
+	flex-direction: column;
+	width: 25rem;
+	height: 30rem;
+	justify-content: center;
+	align-items: center;
+	background-color: $w;
+	border-radius: $form-radius;
+	box-shadow: $shadow;
+
+	animation: onLoad 0.5s;
+
+	form {
+		display: flex;
+		width: 70%;
+		flex-direction: column;
+		gap: 2rem;
+
+		button {
+			height: 2.5rem;
+			border-radius: $form-input-radius;
+			background: $button-gradient;
+			color: $w;
+			font-weight: 700;
+			border: none;
+			cursor: pointer;
+			transition: all 0.2s ease-in-out;
+
+			&:hover {
+				box-shadow: $button-shadow;
+			}
+		}
+	}
+
+	p {
+		width: 70%;
+		font-size: 0.85rem;
+		margin-top: 1.5rem;
+		text-align: center;
+	}
+
+	.logo {
+		font-size: 1.75rem;
+		margin-bottom: 1rem;
+		font-family: 'Galada', cursive;
+	}
+}
+
+.regular_input {
+	height: 2.5rem;
+	border-radius: $form-input-radius;
+	background-color: $form-input-background;
+	border: none;
+	text-indent: 10px;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		background-color: $form-input-background-hover;
+	}
+}
+
+.color {
+	color: $blue1;
+	font-weight: 700;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		color: $blue2;
+	}
+}
+
+.error_info {
+	color: $logout;
+	font-weight: 700;
+	text-align: center;
+}

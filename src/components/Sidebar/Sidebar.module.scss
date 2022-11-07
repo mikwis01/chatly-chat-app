@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.container {
+	flex: 1;
+	border-radius: $form-radius 0 0 $form-radius;
+	background-color: $w;
+	padding: 1rem;
+	position: relative;
+}

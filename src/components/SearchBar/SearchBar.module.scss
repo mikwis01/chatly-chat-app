@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.container {
+	padding: 0.5rem 0;
+}
+
+.search_wrapper {
+	input {
+		height: 2rem;
+		width: 100%;
+		border-radius: $form-input-radius;
+		background-color: $form-input-background;
+		border: none;
+		text-indent: 10px;
+	}
+}
+
+.user_found {
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	cursor: pointer;
+	border-bottom: 1px solid $form-input-background;
+	transition: all 0.2s ease-in;
+
+	.user_avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	&:hover {
+		color: $blue1;
+	}
+}

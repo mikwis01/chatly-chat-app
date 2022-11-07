@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+@keyframes onLoad {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.container {
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background: $background-gradient;
+
+	.inner_container {
+		width: 65rem;
+		min-height: 70%;
+		display: flex;
+		box-shadow: $shadow;
+
+		animation: onLoad 0.5s;
+
+		@include rwd-max-width(1100) {
+			width: 45rem;
+		}
+
+		@include rwd-max-width(749) {
+			width: 35rem;
+		}
+	}
+}

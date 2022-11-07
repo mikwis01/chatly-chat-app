@@ -1,0 +1,23 @@
+@import '../../styles//variables.scss';
+
+.container {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 1rem;
+
+	button {
+		cursor: pointer;
+		background-color: $logout;
+		color: $w;
+		width: 2.5rem;
+		height: 2.5rem;
+		border: none;
+		border-radius: $form-input-radius;
+		transition: all 0.2s ease-in;
+
+		&:hover {
+			background-color: $logout2;
+		}
+	}
+}
